@@ -1,0 +1,23 @@
+{
+  "@id": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN002",
+  "label": "Cardiomyopathy specification",
+  "version": "2.0",
+  "currentStatus": "Released",
+  "affiliation": {"label": "Cardiomyopathy VCEP"},
+  "ruleSets": [{
+    "@id": "ruleset:1",
+    "genes": [{
+      "@id": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:7577",
+      "label": "MYH7",
+      "diseases": [{"@id": "MONDO:0005021", "label": "HCM", "modeOfInheritance": [{"label": "Autosomal dominant"}]}]
+    }],
+    "criteriaCodes": [{
+      "label": "PM1",
+      "description": "Located in a critical domain.",
+      "evidenceStrengths": [
+        {"label": "Moderate", "applicability": "Applicable", "description": "Use for codons 167-931."},
+        {"label": "Strong", "applicability": "Not applicable"}
+      ]
+    }]
+  }]
+}
