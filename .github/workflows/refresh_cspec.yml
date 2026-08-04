@@ -51,4 +51,5 @@ jobs:
             kb/**
             reports/validation_report.md
             reports/change_report.md
+            data/transformed/**
 
