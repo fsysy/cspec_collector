@@ -17,7 +17,7 @@ dev = ["pytest>=8", "ruff>=0.5"]
 cspec-collector = "cspec_collector.cli:app"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/cspec_collector", "cspec_parser"]
+packages = ["src/cspec_collector", "src/cspec_parser"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
