@@ -14,15 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v8
         with:
-          python-version: "3.12"
-      - run: pip install -e '.[dev]'
-      - run: pytest
-      - run: python -m cspec_collector all --resume
+          enable-cache: true
+      - run: uv python install 3.12
+      - run: uv sync --all-extras --dev
+      - run: uv run pytest
+      - run: uv run python -m cspec_collector all --resume
       - name: Build standalone rule records
         run: >-
-          python transform_cspec.py
+          uv run python transform_cspec.py
           --input data/normalized/cspec_documents.jsonl
           --criteria-input data/normalized/cspec_criteria.jsonl
           --index-output data/transformed/cspec_document_index.jsonl
@@ -52,4 +53,3 @@ jobs:
             reports/validation_report.md
             reports/change_report.md
             data/transformed/**
-
