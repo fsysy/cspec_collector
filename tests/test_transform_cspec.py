@@ -79,6 +79,41 @@ def test_metadata_only_warns_without_fabricating_rules(tmp_path):
     )
 
 
+def test_normalized_criteria_populates_rules(tmp_path):
+    source = tmp_path / "docs.jsonl"
+    criteria = tmp_path / "criteria.jsonl"
+    source.write_text(json.dumps(document()) + "\n", encoding="utf-8")
+    criteria.write_text(
+        json.dumps(
+            {
+                "gene_symbol": "MYH7",
+                "cspec_id": "GN002",
+                "version": "2.0",
+                "ruleset_id": "ruleset/1",
+                "criterion_code": "PM1",
+                "criterion_description": "Hot spot or critical domain.",
+                "strength": "Moderate",
+                "applicability": "Applicable",
+                "source_api_url": "api",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    args = Namespace(
+        input=source,
+        criteria_input=criteria,
+        index_output=tmp_path / "index.jsonl",
+        rules_output=tmp_path / "rules.jsonl",
+        report_output=tmp_path / "report.json",
+        include_non_current=False,
+    )
+    assert transform(args) == 0
+    rule = json.loads((tmp_path / "rules.jsonl").read_text(encoding="utf-8"))
+    assert rule["criterion"] == "PM1"
+    assert rule["applicable"] is True
+
+
 def test_non_current_is_skipped_by_default(tmp_path):
     source = tmp_path / "docs.jsonl"
     source.write_text(

@@ -106,3 +106,64 @@ def extract_rules(document: dict[str, Any]) -> list[RuleRecord]:
             output.append(record)
     return output
 
+
+def rules_from_normalized_criteria(criteria: list[dict[str, Any]]) -> list[RuleRecord]:
+    """Convert collector criterion records into the standalone rule schema.
+
+    The collector's normalized document index intentionally omits the nested API
+    ruleSets, while ``cspec_criteria.jsonl`` retains one loss-preserving record
+    for each criterion/strength/gene combination.  This adapter lets the
+    transformer consume that stable output without inventing rule content.
+    """
+    output: list[RuleRecord] = []
+    seen: set[tuple[Any, ...]] = set()
+    for item in criteria:
+        code, strength, raw = normalize_criterion(
+            item.get("criterion_code") or item.get("criterion_label")
+        )
+        if not code:
+            continue
+        gene = item.get("gene_symbol")
+        key = (item.get("cspec_id"), gene, code, strength or item.get("strength"), item.get("ruleset_id"))
+        if key in seen:
+            continue
+        seen.add(key)
+        actual_strength = strength or item.get("strength")
+        descriptor = str(item.get("strength_descriptor") or "").strip()
+        description = str(item.get("criterion_description") or "").strip()
+        rule_text = "\n\n".join(value for value in (description, descriptor) if value)
+        applicability = str(item.get("applicability") or "").strip()
+        applicable = None
+        if applicability.casefold() == "applicable":
+            applicable = True
+        elif applicability.casefold() in {"not applicable", "not-applicable"}:
+            applicable = False
+        suffix = actual_strength or "unspecified"
+        rule_id = f"{item.get('cspec_id')}:{gene or 'ALL'}:{code}:{suffix}"
+        source_path = str(item.get("ruleset_id") or "")
+        output.append(
+            RuleRecord(
+                rule_id=rule_id,
+                cspec_id=str(item.get("cspec_id") or ""),
+                gene=gene,
+                hgnc_id=item.get("hgnc_id"),
+                criterion=code,
+                criterion_raw=raw,
+                direction=direction(code),
+                applicable=applicable,
+                strength=actual_strength,
+                allowed_strengths=[actual_strength] if actual_strength else [],
+                diseases=item.get("diseases", []),
+                modes_of_inheritance=item.get("modes_of_inheritance", []),
+                summary=description,
+                rule_text=rule_text,
+                source_path=source_path,
+                source_paths=[source_path] if source_path else [],
+                source_api_url=str(item.get("source_api_url") or ""),
+                document_version=item.get("version"),
+                extraction_confidence="high",
+                requires_manual_review=applicable is None,
+            )
+        )
+    return output
+

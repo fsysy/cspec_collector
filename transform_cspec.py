@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from cspec_parser.loader import load_jsonl
-from cspec_parser.rule_extractor import extract_rules
+from cspec_parser.rule_extractor import extract_rules, rules_from_normalized_criteria
 from cspec_parser.validator import duplicate_ids, validate_rule
 from cspec_parser.writer import write_jsonl, write_report
 
@@ -69,6 +69,16 @@ def transform(args: argparse.Namespace) -> int:
                     "line": line,
                 }
             )
+    if getattr(args, "criteria_input", None):
+        criteria = []
+        for line, item, parse_error in load_jsonl(args.criteria_input):
+            if parse_error:
+                errors.append({"line": line, "message": parse_error, "input": "criteria"})
+                continue
+            if item is not None:
+                criteria.append(item)
+        rules = rules_from_normalized_criteria(criteria)
+        warnings = [warning for warning in warnings if warning.get("code") != "NO_RULE_CONTENT_FOUND"]
     gene_symbols = {symbol for index in indexes for symbol in index["gene_symbols"]}
     for rule in rules:
         errors.extend(
@@ -100,6 +110,11 @@ def main() -> int:
     parser.add_argument("--rules-output", type=Path, default=Path("cspec_rules.jsonl"))
     parser.add_argument("--report-output", type=Path, default=Path("cspec_validation_report.json"))
     parser.add_argument("--include-non-current", action="store_true")
+    parser.add_argument(
+        "--criteria-input",
+        type=Path,
+        help="Optional normalized cspec_criteria.jsonl; use it to populate rules while indexing documents.",
+    )
     return transform(parser.parse_args())
 
 
