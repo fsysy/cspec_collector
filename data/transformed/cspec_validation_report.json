@@ -1,0 +1,623 @@
+{
+  "input_documents": 102,
+  "indexed_documents": 102,
+  "skipped_non_current_documents": 0,
+  "rules_created": 0,
+  "rules_requiring_manual_review": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN002",
+      "line": 1
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN003",
+      "line": 2
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN005",
+      "line": 3
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN006",
+      "line": 4
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN007",
+      "line": 5
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN008",
+      "line": 6
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN009",
+      "line": 7
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN010",
+      "line": 8
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN011",
+      "line": 9
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN012",
+      "line": 10
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN013",
+      "line": 11
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN014",
+      "line": 12
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN015",
+      "line": 13
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN017",
+      "line": 14
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN018",
+      "line": 15
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN019",
+      "line": 16
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN021",
+      "line": 17
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN022",
+      "line": 18
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN023",
+      "line": 19
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN024",
+      "line": 20
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN025",
+      "line": 21
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN026",
+      "line": 22
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN027",
+      "line": 23
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN067",
+      "line": 24
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN068",
+      "line": 25
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN069",
+      "line": 26
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN070",
+      "line": 27
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN071",
+      "line": 28
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN076",
+      "line": 29
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN078",
+      "line": 30
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN079",
+      "line": 31
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN080",
+      "line": 32
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN081",
+      "line": 33
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN082",
+      "line": 34
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN083",
+      "line": 35
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN084",
+      "line": 36
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN085",
+      "line": 37
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN086",
+      "line": 38
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN087",
+      "line": 39
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN088",
+      "line": 40
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN089",
+      "line": 41
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN090",
+      "line": 42
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN091",
+      "line": 43
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN092",
+      "line": 44
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN094",
+      "line": 45
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN095",
+      "line": 46
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN097",
+      "line": 47
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN098",
+      "line": 48
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN099",
+      "line": 49
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN100",
+      "line": 50
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN101",
+      "line": 51
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN102",
+      "line": 52
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN103",
+      "line": 53
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN104",
+      "line": 54
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN105",
+      "line": 55
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN106",
+      "line": 56
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN112",
+      "line": 57
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN113",
+      "line": 58
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN114",
+      "line": 59
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN115",
+      "line": 60
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN116",
+      "line": 61
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN119",
+      "line": 62
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN120",
+      "line": 63
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN121",
+      "line": 64
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN122",
+      "line": 65
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN123",
+      "line": 66
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN124",
+      "line": 67
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN125",
+      "line": 68
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN126",
+      "line": 69
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN127",
+      "line": 70
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN128",
+      "line": 71
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN129",
+      "line": 72
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN135",
+      "line": 73
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN136",
+      "line": 74
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN137",
+      "line": 75
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN138",
+      "line": 76
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN139",
+      "line": 77
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN141",
+      "line": 78
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN146",
+      "line": 79
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN147",
+      "line": 80
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN148",
+      "line": 81
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN149",
+      "line": 82
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN150",
+      "line": 83
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN156",
+      "line": 84
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN157",
+      "line": 85
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN158",
+      "line": 86
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN160",
+      "line": 87
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN164",
+      "line": 88
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN167",
+      "line": 89
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN169",
+      "line": 90
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN170",
+      "line": 91
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN173",
+      "line": 92
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN179",
+      "line": 93
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN180",
+      "line": 94
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN184",
+      "line": 95
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN185",
+      "line": 96
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN186",
+      "line": 97
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN187",
+      "line": 98
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN188",
+      "line": 99
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN189",
+      "line": 100
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN208",
+      "line": 101
+    },
+    {
+      "code": "NO_RULE_CONTENT_FOUND",
+      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
+      "cspec_id": "GN226",
+      "line": 102
+    }
+  ]
+}
+
