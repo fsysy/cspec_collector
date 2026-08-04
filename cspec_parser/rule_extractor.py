@@ -1,0 +1,108 @@
+from __future__ import annotations
+
+from typing import Any
+
+from .models import RuleRecord
+from .normalizer import direction, is_not_applicable, normalize_criterion, text_of
+from .threshold_parser import extract_thresholds
+
+
+def extract_rules(document: dict[str, Any]) -> list[RuleRecord]:
+    """Extract explicit criterion-bearing nodes; never create rules from keywords alone."""
+    cspec_id = str(document.get("cspec_id", ""))
+    genes = document.get("genes") or [{"symbol": None, "hgnc_id": None}]
+    candidates: list[tuple[str, Any]] = []
+
+    def walk(value: Any, path: str) -> None:
+        if isinstance(value, dict):
+            marker = (
+                value.get("criterion")
+                or value.get("criterion_code")
+                or value.get("label")
+                or value.get("name")
+            )
+            criterion, _, _ = normalize_criterion(marker or path.rsplit(".", 1)[-1])
+            if criterion:
+                candidates.append((path, value))
+            for key, child in value.items():
+                walk(child, f"{path}.{key}")
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                walk(child, f"{path}[{index}]")
+
+    for key in ("criteria", "rules", "specifications", "content", "rule_sets", "ruleSets"):
+        if key in document:
+            walk(document[key], f"$.{key}")
+    output: list[RuleRecord] = []
+    seen: dict[tuple[Any, ...], RuleRecord] = {}
+    for path, node in candidates:
+        raw_marker = (
+            node.get("criterion")
+            or node.get("criterion_code")
+            or node.get("label")
+            or node.get("name")
+        )
+        criterion, strength, raw = normalize_criterion(raw_marker or path.rsplit(".", 1)[-1])
+        if not criterion:
+            continue
+        rule_text = text_of(node)
+        if not rule_text:
+            rule_text = text_of(node.get("description"))
+        allowed = (
+            [str(x) for x in node.get("allowed_strengths", node.get("evidenceStrengths", []))]
+            if isinstance(node.get("allowed_strengths", node.get("evidenceStrengths", [])), list)
+            else []
+        )
+        applicable = (
+            node.get("applicable")
+            if isinstance(node.get("applicable"), bool)
+            else (False if is_not_applicable(rule_text) else None)
+        )
+        confidence = "high" if applicable is not None or strength or rule_text else "low"
+        review = confidence == "low" or applicable is None
+        for gene in genes:
+            symbol = gene.get("symbol") if isinstance(gene, dict) else str(gene)
+            key = (cspec_id, symbol, criterion, strength, path)
+            if key in seen:
+                continue
+            seq = f"{len(output) + 1:03d}"
+            record = RuleRecord(
+                rule_id=f"{cspec_id}:{symbol or 'ALL'}:{criterion}:{seq}",
+                cspec_id=cspec_id,
+                gene=symbol,
+                hgnc_id=gene.get("hgnc_id") if isinstance(gene, dict) else None,
+                criterion=criterion,
+                criterion_raw=raw,
+                direction=direction(criterion),
+                applicable=applicable,
+                strength=strength,
+                allowed_strengths=allowed,
+                default_strength=node.get("default_strength"),
+                thresholds=extract_thresholds(rule_text),
+                conditions=node.get("conditions", []),
+                exclusions=node.get("exclusions", []),
+                variant_types=node.get("variant_types", []),
+                regions=node.get("regions", []),
+                transcripts=node.get("transcripts", []),
+                diseases=document.get("diseases", []),
+                modes_of_inheritance=document.get("modes_of_inheritance", []),
+                summary=str(node.get("summary", "")),
+                rule_text=rule_text,
+                notes=list(node.get("notes", []))
+                if isinstance(node.get("notes", []), list)
+                else [str(node.get("notes"))],
+                references=node.get("references", []),
+                source_path=path,
+                source_paths=[path],
+                source_api_url=str(document.get("source_api_url", "")),
+                source_ui_url=str(document.get("source_ui_url", "")),
+                document_version=document.get("version"),
+                document_status=document.get("document_status"),
+                release_date=document.get("release_date"),
+                extraction_confidence=confidence,
+                requires_manual_review=review,
+            )
+            seen[key] = record
+            output.append(record)
+    return output
+
