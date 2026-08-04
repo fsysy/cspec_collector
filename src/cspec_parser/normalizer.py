@@ -39,9 +39,10 @@ STRENGTHS = ("Very Strong", "Strong", "Moderate", "Supporting", "Stand-alone")
 def normalize_criterion(value: Any) -> tuple[str | None, str | None, str | None]:
     """Return normalized criterion, strength, and original text."""
     raw = str(value or "").strip()
-    upper = raw.upper().replace("??, "-")
+    upper = raw.upper().replace("_", "-")
     criterion = next(
-        (code for code in CRITERIA if re.search(rf"(?<![A-Z0-9]){code}(?![A-Z0-9])", upper)), None
+        (code for code in CRITERIA if re.search(rf"(?<![A-Z0-9]){code}(?![A-Z0-9])", upper)),
+        None,
     )
     if not criterion:
         return None, None, raw or None
@@ -50,7 +51,7 @@ def normalize_criterion(value: Any) -> tuple[str | None, str | None, str | None]
         compact = label.replace("-", "")
         if re.search(
             rf"(?i)(?<![A-Za-z]){re.escape(label)}(?![A-Za-z])", raw
-        ) or compact.lower() in raw.lower().replace(" ", ""):
+        ) or compact.lower() in raw.lower().replace(" ", "").replace("_", ""):
             strength = label
             break
     return criterion, strength, raw or None
@@ -76,9 +77,9 @@ def text_of(value: Any) -> str:
         return str(value)
     if isinstance(value, dict):
         return " ".join(
-            text_of(value[k])
-            for k in ("description", "text", "summary", "label", "value")
-            if k in value
+            text_of(value[key])
+            for key in ("description", "text", "summary", "label", "value")
+            if key in value
         )
     if isinstance(value, list):
         return " ".join(text_of(item) for item in value)
