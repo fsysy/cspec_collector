@@ -20,6 +20,14 @@ jobs:
       - run: pip install -e '.[dev]'
       - run: pytest
       - run: python -m cspec_collector all --resume
+      - name: Build standalone rule records
+        run: >-
+          python transform_cspec.py
+          --input data/normalized/cspec_documents.jsonl
+          --criteria-input data/normalized/cspec_criteria.jsonl
+          --index-output data/transformed/cspec_document_index.jsonl
+          --rules-output data/transformed/cspec_rules.jsonl
+          --report-output data/transformed/cspec_validation_report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -28,6 +36,7 @@ jobs:
             data/normalized/
             kb/
             reports/
+            data/transformed/
       - name: Create update pull request
         uses: peter-evans/create-pull-request@v7
         with:
