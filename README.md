@@ -32,7 +32,7 @@ The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector
 
 ## Scheduled refresh
 
-`.github/workflows/refresh_cspec.yml` runs weekly and manually. It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings → Actions → General → Workflow permissions → Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
+`.github/workflows/refresh_cspec.yml` runs weekly and manually. It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings ??Actions ??General ??Workflow permissions ??Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
 
 ## API endpoints
 
@@ -41,3 +41,20 @@ The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector
 - Versions: `GET https://cspec.genome.network/cspec/SequenceVariantInterpretation/id/{cspec_id}/version`
 
 The collector uses observed live response shapes and tolerates unknown additional fields. Run `inspect` to recreate `reports/api_structure.md` from live samples.
+
+## Transform an existing document JSONL
+
+The standalone transformer reads `cspec_documents.jsonl` (or any compatible JSONL path) and writes a metadata index, explicit ACMG/AMP rules, and a machine-readable validation report:
+
+```bash
+python transform_cspec.py \
+  --input cspec_documents.jsonl \
+  --index-output cspec_document_index.jsonl \
+  --rules-output cspec_rules.jsonl \
+  --report-output cspec_validation_report.json
+```
+
+Use `--include-non-current` to include legacy, superseded, and other non-current documents. The transformer recognizes all standard ACMG/AMP criteria, pathogenic/benign direction, strength variants such as `PVS1_Strong` and `PM2 Supporting`, applicability phrases, numeric thresholds, regions, conditions, exclusions, and source paths. It creates a rule only when an explicit criterion-bearing node is present. Metadata-only records produce an empty rules file plus a `NO_RULE_CONTENT_FOUND` warning; no scientific rule is invented.
+
+The transformer is intentionally loss-preserving: original criterion text, source paths, references, and ambiguous values remain in each rule record. Conflicts, missing source paths, malformed JSON lines, invalid thresholds, and duplicate IDs are reported while later lines continue processing. Run its tests with `pytest`.
+
