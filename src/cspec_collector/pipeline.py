@@ -147,7 +147,9 @@ def validate(root: Path) -> bool:
     errors: list[str] = []
     for d in current:
         if not d.genes:
-            errors.append(f"{d.cspec_id}: current document has no gene")
+            warnings.append(
+                f"{d.cspec_id}: current document has no gene; source value preserved without inference"
+            )
     for c in criteria:
         if not (c.criterion_code or c.criterion_label):
             errors.append(f"{c.cspec_id}: criterion has no code or label")
