@@ -1,623 +1,2250 @@
 {
-  "input_documents": 102,
-  "indexed_documents": 102,
+  "input_documents": 101,
+  "indexed_documents": 101,
   "skipped_non_current_documents": 0,
-  "rules_created": 0,
-  "rules_requiring_manual_review": 0,
-  "errors": [],
-  "warnings": [
+  "rules_created": 18060,
+  "rules_requiring_manual_review": 3477,
+  "errors": [
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN002",
-      "line": 1
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP6:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN003",
-      "line": 2
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP6:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN005",
-      "line": 3
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP6:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN006",
-      "line": 4
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP6:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN007",
-      "line": 5
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP6:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN008",
-      "line": 6
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP6:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN009",
-      "line": 7
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP6:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN010",
-      "line": 8
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP6:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN011",
-      "line": 9
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP6:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN012",
-      "line": 10
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP6:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN013",
-      "line": 11
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP6:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN014",
-      "line": 12
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP6:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN015",
-      "line": 13
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP6:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN017",
-      "line": 14
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP6:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN018",
-      "line": 15
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP6:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN019",
-      "line": 16
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP6:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN021",
-      "line": 17
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP6:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN022",
-      "line": 18
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP6:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN023",
-      "line": 19
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP6:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN024",
-      "line": 20
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP6:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN025",
-      "line": 21
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS4:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN026",
-      "line": 22
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS4:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN027",
-      "line": 23
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS4:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN067",
-      "line": 24
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS4:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN068",
-      "line": 25
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS4:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN069",
-      "line": 26
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS4:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN070",
-      "line": 27
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS4:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN071",
-      "line": 28
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS4:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN076",
-      "line": 29
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS4:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN078",
-      "line": 30
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS4:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN079",
-      "line": 31
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS4:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN080",
-      "line": 32
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS4:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN081",
-      "line": 33
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS4:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN082",
-      "line": 34
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS4:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN083",
-      "line": 35
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS4:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN084",
-      "line": 36
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS4:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN085",
-      "line": 37
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS4:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN086",
-      "line": 38
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS4:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN087",
-      "line": 39
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS4:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN088",
-      "line": 40
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS4:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN089",
-      "line": 41
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN090",
-      "line": 42
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN091",
-      "line": 43
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN092",
-      "line": 44
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN094",
-      "line": 45
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN095",
-      "line": 46
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN097",
-      "line": 47
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN098",
-      "line": 48
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN099",
-      "line": 49
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN100",
-      "line": 50
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN101",
-      "line": 51
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN102",
-      "line": 52
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN103",
-      "line": 53
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN104",
-      "line": 54
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN105",
-      "line": 55
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN106",
-      "line": 56
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN112",
-      "line": 57
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN113",
-      "line": 58
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN114",
-      "line": 59
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN115",
-      "line": 60
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN116",
-      "line": 61
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS1:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN119",
-      "line": 62
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS1:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN120",
-      "line": 63
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS1:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN121",
-      "line": 64
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS1:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN122",
-      "line": 65
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS1:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN123",
-      "line": 66
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS1:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN124",
-      "line": 67
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS1:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN125",
-      "line": 68
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS1:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN126",
-      "line": 69
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS1:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN127",
-      "line": 70
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS1:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN128",
-      "line": 71
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS1:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN129",
-      "line": 72
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS1:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN135",
-      "line": 73
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS1:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN136",
-      "line": 74
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS1:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN137",
-      "line": 75
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS1:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN138",
-      "line": 76
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS1:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN139",
-      "line": 77
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS1:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN141",
-      "line": 78
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS1:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN146",
-      "line": 79
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS1:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN147",
-      "line": 80
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS1:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN148",
-      "line": 81
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN149",
-      "line": 82
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN150",
-      "line": 83
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN156",
-      "line": 84
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN157",
-      "line": 85
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN158",
-      "line": 86
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN160",
-      "line": 87
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN164",
-      "line": 88
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP3:Very Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN167",
-      "line": 89
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN169",
-      "line": 90
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN170",
-      "line": 91
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN173",
-      "line": 92
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP3:Strong"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN179",
-      "line": 93
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN180",
-      "line": 94
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN184",
-      "line": 95
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN185",
-      "line": 96
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP3:Moderate"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN186",
-      "line": 97
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN187",
-      "line": 98
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN188",
-      "line": 99
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN189",
-      "line": 100
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP3:Supporting"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN208",
-      "line": 101
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP3:Stand Alone"
     },
     {
-      "code": "NO_RULE_CONTENT_FOUND",
-      "message": "The source record contains document metadata but no extractable ACMG/AMP rule content.",
-      "cspec_id": "GN226",
-      "line": 102
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP7:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP7:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP7:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP7:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP7:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP7:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP7:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP7:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP7:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP7:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP7:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP7:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP7:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP7:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP7:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP7:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP7:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP7:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP7:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP7:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BA1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BA1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BA1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BA1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BA1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BA1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BA1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BA1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BA1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BA1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BA1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BA1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BA1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BA1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BA1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BA1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BA1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BA1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BA1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BA1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PVS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PVS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PVS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PVS1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PVS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PVS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PVS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PVS1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PVS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PVS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PVS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PVS1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PVS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PVS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PVS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PVS1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PVS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PVS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PVS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PVS1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS3:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS3:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS3:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS3:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS3:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP5:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP5:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP5:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP5:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP5:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP1:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP1:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP1:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP1:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PP1:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP4:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP4:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP4:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP4:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP4:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BP2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM6:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM6:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM6:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM6:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM6:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM6:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM6:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM6:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM6:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM6:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM6:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM6:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM6:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM6:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM6:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM6:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:PM6:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:PM6:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:PM6:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:PM6:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS2:Stand Alone"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS2:Very Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS2:Strong"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS2:Moderate"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:SLC19A3:BS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:PDHA1:BS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:POLG:BS2:Supporting"
+    },
+    {
+      "code": "DUPLICATE_RULE_ID",
+      "message": "GN014:ETHE1:BS2:Supporting"
     }
-  ]
+  ],
+  "warnings": []
 }
-
