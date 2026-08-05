@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import logging
+import re
 from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
@@ -130,6 +131,7 @@ def normalize(root: Path) -> tuple[list[DocumentRecord], list[CriterionRecord]]:
     current_criteria = _dedupe_models([c for c in criteria if c.cspec_id in current_ids])
     _write_jsonl(out / "cspec_criteria.jsonl", [c.model_dump() for c in current_criteria])
     _write_gene_index(out / "cspec_gene_index.csv", documents)
+    _write_evidence_index(out / "cspec_evidence_index.jsonl", current_criteria)
     return documents, current_criteria
 
 
@@ -344,6 +346,38 @@ def _write_gene_index(path: Path, docs: list[DocumentRecord]) -> None:
                     modes_of_inheritance=json.dumps(d.modes_of_inheritance, ensure_ascii=False),
                 )
                 writer.writerow(row)
+
+
+def _is_applicable(value: str | None) -> bool:
+    text = (value or "").casefold()
+    return "applicable" in text and "not" not in text
+
+
+def _evidence_token(code: str, strength: str | None) -> str:
+    if not strength:
+        return code
+    compact = re.sub(r"[\s-]+", "", strength)
+    return f"{code}_{compact}"
+
+
+def _write_evidence_index(path: Path, criteria: list[CriterionRecord]) -> None:
+    by_doc: dict[str, dict[str, Any]] = {}
+    for c in criteria:
+        if not c.criterion_code or not _is_applicable(c.applicability):
+            continue
+        entry = by_doc.setdefault(c.cspec_id, {"gene_symbols": set(), "criteria": set()})
+        if c.gene_symbol:
+            entry["gene_symbols"].add(c.gene_symbol)
+        entry["criteria"].add(_evidence_token(c.criterion_code, c.strength))
+    rows = [
+        {
+            "cspec_id": cspec_id,
+            "gene_symbols": sorted(entry["gene_symbols"]),
+            "criteria": sorted(entry["criteria"]),
+        }
+        for cspec_id, entry in sorted(by_doc.items())
+    ]
+    _write_jsonl(path, rows)
 
 
 def _load_json(path: Path, default: Any) -> Any:

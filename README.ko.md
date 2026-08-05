@@ -56,6 +56,8 @@ uv run python -m cspec_collector all --resume
 
 서버 원본 응답은 `data/raw/`, 정규화된 출력은 `data/normalized/`, 지식 파일은 `kb/`, 점검·실패·검증·변경·HTTP 매니페스트 리포트는 `reports/` 아래에 저장됩니다.
 
+`normalize`는 지식데이터베이스 조회용 축약 색인 `data/normalized/cspec_evidence_index.jsonl`도 만듭니다. `cspec_id` 하나당 한 줄이며, `gene_symbols`(리스트)와 `criteria`(그 문서에서 `applicability`가 "적용 가능" 계열인 판정기준/강도 조합만) 필드를 담습니다. 표기는 `PM1_Strong`, `PM2_Supporting`처럼 코드와 강도를 언더스코어로 이은 단일 토큰이며(강도가 없는 코드는 접미사 없이 코드만), 적용 불가능한 조합은 목록에서 그냥 빠집니다.
+
 API가 HGNC ID, 상태 필드, 레거시 플래그를 종종 누락하는 경우가 있습니다. 수집기는 이런 값을 null로 두거나 문서를 `ambiguous`로 분류할 뿐, 값을 임의로 만들어내지 않습니다. 한 유전자에 현재(current released) 문서가 둘 이상 있으면 그대로 보존하고 경고로 보고합니다.
 
 ## 수동 갱신

@@ -56,6 +56,8 @@ Common options are `--resume`, `--force`, `--page-size`, `--output-dir`, `--max-
 
 Raw server responses live under `data/raw/`; normalized output under `data/normalized/`; Knowledge files under `kb/`; inspection, failure, validation, change, and HTTP manifest reports under `reports/`.
 
+`normalize` also writes `data/normalized/cspec_evidence_index.jsonl`, a compact per-document index for knowledge-base lookups: one line per `cspec_id`, with `gene_symbols` (list) and `criteria` — only the criterion/strength combinations whose `applicability` is some form of "applicable", formatted as a single token such as `PM1_Strong` or `PM2_Supporting` (no suffix when a code has no strength tier). Non-applicable combinations are simply absent from the list.
+
 The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector keeps those values null or classifies the document as `ambiguous`; it never invents them. More than one current released document for a gene is preserved and reported as a warning.
 
 ## Manual refresh
