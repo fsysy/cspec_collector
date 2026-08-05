@@ -5,6 +5,7 @@ __pycache__/
 *.py[cod]
 data/raw/
 data/normalized/
+data/transformed/
 kb/cspec_guidelines_*.md
 kb/cspec_gene_index.md
 reports/failures.jsonl

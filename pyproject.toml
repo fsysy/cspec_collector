@@ -21,6 +21,7 @@ packages = ["src/cspec_collector", "src/cspec_parser"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100

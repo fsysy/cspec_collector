@@ -1,14 +1,14 @@
 # CSpec validation report
 
-Generated: 2026-08-04T09:04:30.820617+00:00
+Generated: 2026-08-05T00:35:23.247237+00:00
 
 ## Summary
 
 - Total list records: 240
-- Current released documents: 102
+- Current released documents: 101
 - Legacy or superseded documents: 20
-- Unique genes: 113
-- Criterion records: 18200
+- Unique genes: 112
+- Criterion records: 18060
 - Failed HTTP requests: 0
 - Ambiguous documents: 12
 - Duplicate or colliding genes: 3

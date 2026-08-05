@@ -2,6 +2,18 @@
 
 Collects the official ClinGen CSpec Registry API, preserves raw JSON, classifies current versus historical documents, produces gene/criterion normalized data, and builds Custom GPT Knowledge Markdown without summarizing scientific language.
 
+## Project status
+
+Active development. Declared: 2026-08-05.
+
+## Project policy
+
+- **Constitution**: follows the llama agent constitution, version `0.9.0`. Last constitutional review: 2026-08-05, scope: full project (README, source, tests, `.gitignore`, git hygiene).
+- **Testing**: pytest is required for this project (parsing/normalization logic needs regression coverage). Reviewed 2026-08-05 — `tests/` has 23 passing tests.
+- **Lint**: Ruff is the project linter. Reviewed 2026-08-05 — `ruff check .` passed with no findings.
+- **Logging**: console-only via Python's standard `logging` module, controlled by `--log-level` (see Commands below); no persistent log file is kept. Decided 2026-08-05.
+- **Package/project management**: uv + `pyproject.toml`, `src/` layout with `cspec_collector` and `cspec_parser` packages. Reviewed 2026-08-05 — compliant, no exemption needed.
+
 ## Requirements and setup
 
 Python 3.11 or newer:
@@ -32,7 +44,7 @@ The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector
 
 ## Scheduled refresh
 
-`.github/workflows/refresh_cspec.yml` runs weekly and manually. It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings ??Actions ??General ??Workflow permissions ??Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
+`.github/workflows/refresh_cspec.yml` runs weekly and manually. It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings → Actions → General → Workflow permissions → Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
 
 ## API endpoints
 
