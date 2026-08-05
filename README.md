@@ -1,8 +1,11 @@
 # ClinGen CSpec Collector
 
-[English](#clingen-cspec-collector) | [한국어](#클린젠-cspec-수집기-한국어)
-
 Collects the official ClinGen CSpec Registry API, preserves raw JSON, classifies current versus historical documents, produces gene/criterion normalized data, and builds Custom GPT Knowledge Markdown without summarizing scientific language.
+
+Pick a language below — click a heading to expand it (GitHub Markdown has no real tabs, so this uses collapsible sections instead).
+
+<details open>
+<summary><strong>🇬🇧 English</strong></summary>
 
 ## Project status
 
@@ -15,6 +18,7 @@ Active development. Declared: 2026-08-05.
 - **Lint**: Ruff is the project linter. Reviewed 2026-08-05 — `ruff check .` passed with no findings.
 - **Logging**: console-only via Python's standard `logging` module, controlled by `--log-level` (see Commands below); no persistent log file is kept. Decided 2026-08-05.
 - **Package/project management**: uv + `pyproject.toml`, `src/` layout with `cspec_collector` and `cspec_parser` packages. Reviewed 2026-08-05 — compliant, no exemption needed.
+- **Generated data in git**: `data/raw/`, `data/normalized/`, `data/transformed/`, and `kb/` are tracked in git (not gitignored) so the collected and parsed ClinGen data can be shared directly from the repository instead of requiring a local pipeline run or a workflow artifact download. Decided 2026-08-05; this supersedes an earlier hygiene fix that had gitignored those paths.
 
 ## Requirements and setup
 
@@ -57,9 +61,9 @@ Raw server responses live under `data/raw/`; normalized output under `data/norma
 
 The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector keeps those values null or classifies the document as `ambiguous`; it never invents them. More than one current released document for a gene is preserved and reported as a warning.
 
-## Scheduled refresh
+## Manual refresh
 
-`.github/workflows/refresh_cspec.yml` runs weekly and manually. It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings → Actions → General → Workflow permissions → Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
+`.github/workflows/refresh_cspec.yml` runs only on manual dispatch (no schedule). It tests, collects, validates, uploads all results as an artifact, and opens/updates the `cspec-data-update` pull request when repository permissions allow. Enable **Settings → Actions → General → Workflow permissions → Read and write permissions** and allow Actions to create pull requests. The workflow never merges into `main` automatically.
 
 ## API endpoints
 
@@ -85,27 +89,25 @@ Use `--include-non-current` to include legacy, superseded, and other non-current
 
 The transformer is intentionally loss-preserving: original criterion text, source paths, references, and ambiguous values remain in each rule record. Conflicts, missing source paths, malformed JSON lines, invalid thresholds, and duplicate IDs are reported while later lines continue processing. Run its tests with `uv run pytest`.
 
----
+</details>
 
-## 클린젠 CSpec 수집기 (한국어)
+<details>
+<summary><strong>🇰🇷 한국어</strong></summary>
 
-[English](#clingen-cspec-collector) | [한국어](#클린젠-cspec-수집기-한국어)
-
-클린젠(ClinGen) CSpec Registry 공식 API를 수집하여 원본 JSON을 그대로 보존하고, 현재 문서와 과거 문서를 분류하며, 유전자/판정기준(criterion) 단위 정규화 데이터를 생성하고, 과학적 문구를 요약하지 않은 채로 Custom GPT용 지식 마크다운을 만듭니다.
-
-### 프로젝트 상태
+## 프로젝트 상태
 
 활성 개발 중(Active development). 선언일: 2026-08-05.
 
-### 프로젝트 정책
+## 프로젝트 정책
 
 - **헌법(Constitution)**: llama 에이전트 헌법 `0.9.0` 버전을 따릅니다. 마지막 헌법심판: 2026-08-05, 범위: 프로젝트 전체(README, 소스, 테스트, `.gitignore`, git 위생).
 - **테스트**: 파싱/정규화 로직에 회귀 테스트가 필요하므로 pytest가 필수입니다. 2026-08-05 검토 — `tests/`에 23개 테스트 통과.
 - **린트**: Ruff를 프로젝트 린터로 사용합니다. 2026-08-05 검토 — `ruff check .` 통과, 지적 사항 없음.
 - **로깅**: Python 표준 `logging` 모듈을 통한 콘솔 출력만 사용하며(`--log-level`로 제어), 영구 로그 파일은 남기지 않습니다. 2026-08-05 결정.
 - **패키지/프로젝트 관리**: uv + `pyproject.toml`, `cspec_collector`와 `cspec_parser` 패키지를 둔 `src/` 레이아웃을 사용합니다. 2026-08-05 검토 — 규정 준수, 예외 불필요.
+- **생성 데이터의 git 추적**: `data/raw/`, `data/normalized/`, `data/transformed/`, `kb/`를 gitignore하지 않고 git에 그대로 추적합니다. 파이프라인을 로컬에서 실행하거나 워크플로 아티팩트를 내려받지 않아도 저장소에서 바로 수집·정제된 ClinGen 데이터를 공유할 수 있도록 하기 위함입니다. 2026-08-05 결정 — 이전에 이 경로들을 gitignore했던 위생 조치를 대체합니다.
 
-### 요구사항 및 설치
+## 요구사항 및 설치
 
 Python 3.11 이상이 필요하며, [uv](https://docs.astral.sh/uv/)로 패키지를 관리합니다.
 
@@ -129,7 +131,7 @@ uv sync --extra dev
 uv run pytest
 ```
 
-### 명령어
+## 명령어
 
 ```bash
 uv run python -m cspec_collector inspect
@@ -146,11 +148,11 @@ uv run python -m cspec_collector all --resume
 
 API가 HGNC ID, 상태 필드, 레거시 플래그를 종종 누락하는 경우가 있습니다. 수집기는 이런 값을 null로 두거나 문서를 `ambiguous`로 분류할 뿐, 값을 임의로 만들어내지 않습니다. 한 유전자에 현재(current released) 문서가 둘 이상 있으면 그대로 보존하고 경고로 보고합니다.
 
-### 예약 갱신
+## 수동 갱신
 
-`.github/workflows/refresh_cspec.yml`은 매주 자동 실행되며 수동 실행도 가능합니다. 테스트, 수집, 검증을 수행하고 전체 결과를 아티팩트로 업로드하며, 저장소 권한이 허용하면 `cspec-data-update` 풀 리퀘스트를 열거나 갱신합니다. **Settings → Actions → General → Workflow permissions → Read and write permissions**를 활성화하고 Actions가 풀 리퀘스트를 만들 수 있도록 허용하세요. 이 워크플로는 `main`에 자동으로 병합하지 않습니다.
+`.github/workflows/refresh_cspec.yml`은 예약 실행 없이 수동 실행(workflow_dispatch)으로만 동작합니다. 테스트, 수집, 검증을 수행하고 전체 결과를 아티팩트로 업로드하며, 저장소 권한이 허용하면 `cspec-data-update` 풀 리퀘스트를 열거나 갱신합니다. **Settings → Actions → General → Workflow permissions → Read and write permissions**를 활성화하고 Actions가 풀 리퀘스트를 만들 수 있도록 허용하세요. 이 워크플로는 `main`에 자동으로 병합하지 않습니다.
 
-### API 엔드포인트
+## API 엔드포인트
 
 - 목록: `GET https://cspec.genome.network/cspec/SequenceVariantInterpretation/id`
 - JSON-LD: `GET https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/{cspec_id}`
@@ -158,7 +160,7 @@ API가 HGNC ID, 상태 필드, 레거시 플래그를 종종 누락하는 경우
 
 수집기는 실제 응답에서 관찰된 형태를 사용하며 알려지지 않은 추가 필드도 허용합니다. `inspect`를 실행하면 실제 샘플로부터 `reports/api_structure.md`를 다시 생성합니다.
 
-### 기존 문서 JSONL 변환
+## 기존 문서 JSONL 변환
 
 독립 실행형 변환기는 `cspec_documents.jsonl`(또는 호환되는 임의의 JSONL 경로)을 읽어 메타데이터 색인, 명시적 ACMG/AMP 규칙, 기계 판독 가능한 검증 리포트를 만듭니다:
 
@@ -174,3 +176,4 @@ uv run python transform_cspec.py \
 
 변환기는 의도적으로 정보 손실이 없도록 설계되었습니다. 원본 판정기준 텍스트, 출처 경로, 참고문헌, 모호한 값은 각 규칙 레코드에 그대로 남습니다. 충돌, 누락된 출처 경로, 잘못된 JSON 라인, 유효하지 않은 임계값, 중복 ID는 보고하되 이후 라인 처리는 계속됩니다. 테스트는 `uv run pytest`로 실행하세요.
 
+</details>
