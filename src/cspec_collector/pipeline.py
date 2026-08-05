@@ -131,7 +131,8 @@ def normalize(root: Path) -> tuple[list[DocumentRecord], list[CriterionRecord]]:
     current_criteria = _dedupe_models([c for c in criteria if c.cspec_id in current_ids])
     _write_jsonl(out / "cspec_criteria.jsonl", [c.model_dump() for c in current_criteria])
     _write_gene_index(out / "cspec_gene_index.csv", documents)
-    _write_evidence_index(out / "cspec_evidence_index.jsonl", current_criteria)
+    evidence_rows = _write_evidence_index(out / "cspec_evidence_index.jsonl", current_criteria)
+    _write_evidence_index_markdown(out / "cspec_evidence_index.md", evidence_rows, documents)
     return documents, current_criteria
 
 
@@ -360,7 +361,7 @@ def _evidence_token(code: str, strength: str | None) -> str:
     return f"{code}_{compact}"
 
 
-def _write_evidence_index(path: Path, criteria: list[CriterionRecord]) -> None:
+def _write_evidence_index(path: Path, criteria: list[CriterionRecord]) -> list[dict[str, Any]]:
     by_doc: dict[str, dict[str, Any]] = {}
     for c in criteria:
         if not c.criterion_code:
@@ -389,6 +390,43 @@ def _write_evidence_index(path: Path, criteria: list[CriterionRecord]) -> None:
         for cspec_id, entry in sorted(by_doc.items())
     ]
     _write_jsonl(path, rows)
+    return rows
+
+
+def _write_evidence_index_markdown(
+    path: Path, rows: list[dict[str, Any]], documents: list[DocumentRecord]
+) -> None:
+    doc_by_id = {d.cspec_id: d for d in documents}
+    lines = ["# CSpec evidence index", "", f"Generated: {_now()}", ""]
+    for row in rows:
+        doc = doc_by_id.get(row["cspec_id"])
+        title = doc.title if doc and doc.title else row["cspec_id"]
+        vcep = doc.vcep if doc and doc.vcep else ""
+        genes = ", ".join(row["gene_symbols"]) or "(no gene in source)"
+        lines += [
+            f"## {row['cspec_id']} — {title}",
+            "",
+            f"- VCEP: {vcep or 'unknown'}",
+            f"- Genes: {genes}",
+            "",
+            "### Applicable",
+            "",
+        ]
+        if row["applicable"]:
+            for item in row["applicable"]:
+                lines.append(f"- **{item['criterion']}** — {item['description'] or ''}")
+                if item["specification"]:
+                    lines.append(f"  - VCEP specification: {item['specification']}")
+        else:
+            lines.append("- None")
+        lines += [
+            "",
+            "### Not applicable",
+            "",
+            ", ".join(row["not_applicable"]) or "None",
+            "",
+        ]
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def _load_json(path: Path, default: Any) -> Any:

@@ -64,6 +64,8 @@ uv run python -m cspec_collector all --resume
 
 원본 API에 유전자 정보가 없는 문서(`reports/validation_report.md` 참고)는 `gene_symbols`가 빈 리스트이며, 값을 임의로 채우지 않습니다.
 
+`normalize`는 같은 내용을 마크다운으로도 만듭니다(`data/normalized/cspec_evidence_index.md`). `cspec_id`마다 제목/VCEP/유전자와 Applicable·Not applicable 절로 구성되어 있어, JSONL 내용을 사람이 빠르게 눈으로 검토하기 위한 용도입니다.
+
 API가 HGNC ID, 상태 필드, 레거시 플래그를 종종 누락하는 경우가 있습니다. 수집기는 이런 값을 null로 두거나 문서를 `ambiguous`로 분류할 뿐, 값을 임의로 만들어내지 않습니다. 한 유전자에 현재(current released) 문서가 둘 이상 있으면 그대로 보존하고 경고로 보고합니다.
 
 ## 수동 갱신

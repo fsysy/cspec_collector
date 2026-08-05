@@ -64,6 +64,8 @@ Raw server responses live under `data/raw/`; normalized output under `data/norma
 
 A document with no gene in the source API (see `reports/validation_report.md`) has an empty `gene_symbols` list; nothing is invented.
 
+`normalize` also writes `data/normalized/cspec_evidence_index.md`, the same data rendered as Markdown (one section per `cspec_id`, with title/VCEP/genes, then Applicable and Not applicable subsections) for quick human review of what the JSONL contains.
+
 The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector keeps those values null or classifies the document as `ambiguous`; it never invents them. More than one current released document for a gene is preserved and reported as a warning.
 
 ## Manual refresh
