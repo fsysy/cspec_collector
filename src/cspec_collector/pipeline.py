@@ -363,17 +363,28 @@ def _evidence_token(code: str, strength: str | None) -> str:
 def _write_evidence_index(path: Path, criteria: list[CriterionRecord]) -> None:
     by_doc: dict[str, dict[str, Any]] = {}
     for c in criteria:
-        if not c.criterion_code or not _is_applicable(c.applicability):
+        if not c.criterion_code:
             continue
-        entry = by_doc.setdefault(c.cspec_id, {"gene_symbols": set(), "criteria": set()})
+        entry = by_doc.setdefault(
+            c.cspec_id, {"gene_symbols": set(), "applicable": {}, "not_applicable": set()}
+        )
         if c.gene_symbol:
             entry["gene_symbols"].add(c.gene_symbol)
-        entry["criteria"].add(_evidence_token(c.criterion_code, c.strength))
+        token = _evidence_token(c.criterion_code, c.strength)
+        if _is_applicable(c.applicability):
+            entry["applicable"][token] = {
+                "criterion": token,
+                "description": c.criterion_description,
+                "specification": c.strength_descriptor,
+            }
+        else:
+            entry["not_applicable"].add(token)
     rows = [
         {
             "cspec_id": cspec_id,
             "gene_symbols": sorted(entry["gene_symbols"]),
-            "criteria": sorted(entry["criteria"]),
+            "applicable": [entry["applicable"][key] for key in sorted(entry["applicable"])],
+            "not_applicable": sorted(entry["not_applicable"]),
         }
         for cspec_id, entry in sorted(by_doc.items())
     ]

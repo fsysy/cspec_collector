@@ -56,7 +56,13 @@ Common options are `--resume`, `--force`, `--page-size`, `--output-dir`, `--max-
 
 Raw server responses live under `data/raw/`; normalized output under `data/normalized/`; Knowledge files under `kb/`; inspection, failure, validation, change, and HTTP manifest reports under `reports/`.
 
-`normalize` also writes `data/normalized/cspec_evidence_index.jsonl`, a compact per-document index for knowledge-base lookups: one line per `cspec_id`, with `gene_symbols` (list) and `criteria` — only the criterion/strength combinations whose `applicability` is some form of "applicable", formatted as a single token such as `PM1_Strong` or `PM2_Supporting` (no suffix when a code has no strength tier). Non-applicable combinations are simply absent from the list.
+`normalize` also writes `data/normalized/cspec_evidence_index.jsonl`, a per-document index for knowledge-base lookups. One line per `cspec_id`, with:
+
+- `gene_symbols`: list of genes the document covers.
+- `applicable`: criterion/strength combinations whose `applicability` is some form of "applicable" (e.g. `PM1_Strong`, `PM2_Supporting`; no strength suffix when a code has none), each with `description` (the criterion's general ACMG/AMP meaning) and `specification` (the VCEP's specific application text for that strength, when the source provides one).
+- `not_applicable`: the same token format, for combinations the VCEP explicitly does not use. These never carry a description in the source data, so they are kept as a plain list.
+
+A document with no gene in the source API (see `reports/validation_report.md`) has an empty `gene_symbols` list; nothing is invented.
 
 The API sometimes omits HGNC IDs, status fields, and legacy flags. The collector keeps those values null or classifies the document as `ambiguous`; it never invents them. More than one current released document for a gene is preserved and reported as a warning.
 
